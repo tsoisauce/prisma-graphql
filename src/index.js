@@ -1,24 +1,12 @@
 const { GraphQLServer } = require("graphql-yoga");
 const { prisma } = require("./generated/prisma-client"); // attaches prisma client to context
 
+const Query = require("./resolvers/Query");
+const Mutation = require("./resolvers/Mutation");
+
 const resolvers = {
-  Query: {
-    info: () => `This is the API for product data.`,
-    allProducts: (root, args, context, info) => {
-      return context.prisma.products();
-    }
-  },
-  Mutation: {
-    addProduct: (root, args, context, info) => {
-      return context.prisma.createProduct({
-        title: args.title,
-        sku: args.sku,
-        description: args.description,
-        price: args.price,
-        inStock: args.inStock
-      });
-    }
-  }
+  Query,
+  Mutation
 };
 
 const server = new GraphQLServer({

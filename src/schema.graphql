@@ -13,6 +13,10 @@ type Mutation {
   ): Product!
 }
 
+type Subscription {
+  newProduct: Product
+}
+
 type Product {
   id: ID!
   title: String!

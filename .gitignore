@@ -1,4 +1,4 @@
 *./env
+./prisma
+./src/generated/prisma-client
 node_modules
-prisma
-./src/generated

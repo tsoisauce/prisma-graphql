@@ -1,0 +1,10 @@
+type Product {
+  id: ID! @id
+  title: String!
+  sku: String!
+  description: String!
+  price: Int!
+  inStock: Boolean!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}

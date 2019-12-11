@@ -1,0 +1,23 @@
+type Query {
+  info: String!
+  products: [Product!]!
+}
+
+type Mutation {
+  addProduct(
+    title: String!
+    sku: String!
+    description: String!
+    price: Int!
+    inStock: Boolean!
+  ): Product!
+}
+
+type Product {
+  id: ID!
+  title: String!
+  sku: String!
+  description: String!
+  price: Int!
+  inStock: Boolean!
+}

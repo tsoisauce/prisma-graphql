@@ -1,0 +1,11 @@
+{
+  "name": "prisma-graphql-yoga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tsoisauce/prisma-graphql.git",
+  "author": "Kelvin Tsoi",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}

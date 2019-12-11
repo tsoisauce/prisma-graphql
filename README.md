@@ -11,7 +11,7 @@ Primsa Client will connect your Graph Server to Prisma Cloud Database.
 ```mermaid
 graph LR;
   Client-->GraphServer/PrismaClient;
-  GraphServer-->PrismaServer;
+  GraphServer/PrismaClient-->PrismaServer;
   PrismaServer-->Database;
 ```
 
@@ -27,7 +27,7 @@ touch prisma/datamodel.prisma
 
 #### Define and map your schema to Prisma server in `datamodel.prisma`
 
-```prisma
+```graphql
 type Product {
   id: ID! @id
   title: String!

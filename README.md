@@ -75,3 +75,18 @@ Prisma client will connect your Graph Server to Prisma Servers.  The following w
 A new folder called `.src/genertated/prisma-client/index.js` will be created.
 
 #### Subscription
+
+Subscriptions is a websocket that allows the client to subscribe to any mutations as defined in the subscription resolvers
+
+```graphql
+subscription {
+  newProduct {
+    id
+    title
+    sku
+    description
+    price
+    inStock
+  }
+}
+```

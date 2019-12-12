@@ -73,3 +73,5 @@ Prisma client will connect your Graph Server to Prisma Servers.  The following w
 1. run `generate prisma` to create Prisma Client
 
 A new folder called `.src/genertated/prisma-client/index.js` will be created.
+
+#### Subscription
